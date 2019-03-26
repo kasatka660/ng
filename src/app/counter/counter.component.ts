@@ -6,13 +6,17 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./counter.component.css'],
 })
 export class CounterComponent {
-  name: string = 'default value';
- @Input()
- counterValue: number = 1;
 
+  @Input()
+  name: string;
+  
+  @Input()
+  counterValue: number;
+
+  @Input()
+  step: number;
 
   increment() {
-
+    this.counterValue = this.counterValue + this.step;
   }
-
 }

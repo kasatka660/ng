@@ -7,6 +7,8 @@ import { HelloWorldListComponent } from './hello-world-list/hello-world-list.com
 import { List2Component } from './list2/list2.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterHostComponent } from './counter-host/counter-host.component';
+import { TimerComponent } from './timer/timer.component';
+import { TimerHostComponent } from './timer-host/timer-host.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CounterHostComponent } from './counter-host/counter-host.component';
     HelloWorldListComponent,
     List2Component,
     CounterComponent,
-    CounterHostComponent
+    CounterHostComponent,
+    TimerComponent,
+    TimerHostComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +26,7 @@ import { CounterHostComponent } from './counter-host/counter-host.component';
       { path: 'list1', component: HelloWorldListComponent },
       { path: 'list2', component: List2Component },
       { path: 'counter', component: CounterHostComponent },
+      { path: 'timer', component: TimerHostComponent },
       { path: '', redirectTo: 'list1', pathMatch: 'full' },
     ])
   ],
