@@ -1,0 +1,9 @@
+nav a.active {
+  background-color: red;
+  color: black;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
